@@ -34,13 +34,11 @@ public class Passenger extends Person{
         this.luggage = luggage;
     }
 
-    public static int getAmountOfLuggage(){
-
-        getLuggage.length
+    public int getAmountOfLuggage(){
+        return luggage.length;
     }
-    public static void printTicket(){
-        System.out.println();
-
+    public void printTicket(){
+        System.out.println(ticket);
     }
 
 }
