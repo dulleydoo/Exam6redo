@@ -57,4 +57,13 @@ public class Ticket implements PayAble{
     public double printPaymentAmount() {
         return getPrice();
     }
+
+    @Override
+    public String toString() {
+        return "Ticket id: " + id + "\n" +
+                "origin: " + origin + "\n" +
+                "destination: " + destination + "\n" +
+                "seatNumber: " + seatNumber + "\n" +
+                "price: " + price;
+    }
 }

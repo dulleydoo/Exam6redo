@@ -41,4 +41,5 @@ public class Passenger extends Person{
         System.out.println(ticket);
     }
 
+
 }
