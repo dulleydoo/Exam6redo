@@ -1,4 +1,4 @@
-public class Ticket implements PayAble{
+public abstract class Ticket implements PayAble{
     private int id;
     private String origin;
     private String destination;
@@ -54,9 +54,7 @@ public class Ticket implements PayAble{
     }
 
     @Override
-    public double printPaymentAmount() {
-        return getPrice();
-    }
+    public abstract void printPaymentAmount();
 
     @Override
     public String toString() {

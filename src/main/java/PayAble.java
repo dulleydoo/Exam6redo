@@ -1,3 +1,3 @@
 public interface PayAble {
-    double printPaymentAmount();
+    void printPaymentAmount();
 }

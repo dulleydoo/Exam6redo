@@ -14,4 +14,9 @@ public class PlaneTicket extends Ticket{
     public void setFrequentFlyer(boolean frequentFlyer) {
         isFrequentFlyer = frequentFlyer;
     }
+
+    @Override
+    public void printPaymentAmount() {
+        System.out.println(getPrice());
+    }
 }

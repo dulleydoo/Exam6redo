@@ -3,8 +3,8 @@ public class CrewMember extends Person implements PayAble, ServAble{
     private float salary;
 
 
-    public CrewMember(String name, String person, FlightCrewJob job, float salary) {
-        super(name, person);
+    public CrewMember(String name, FlightCrewJob job, float salary) {
+        super(name);
         this.salary = salary;
         this.job = job;
     }
@@ -31,17 +31,16 @@ public class CrewMember extends Person implements PayAble, ServAble{
         return "CrewMember{" +
                 "job=" + job +
                 ", salary=" + salary +
-                ", person='" + person + '\'' +
                 '}';
     }
 
     @Override
-    public double printPaymentAmount() {
-        return 1.1;
+    public void printPaymentAmount() {
+        System.out.println(getSalary());
     }
 
     @Override
-    public String serve(Person person) {
-        return "Now serving Guest....." + person.getName();
+    public void serve(Person person) {
+        System.out.println("Now serving Guest....." + person.getName());
     }
 }

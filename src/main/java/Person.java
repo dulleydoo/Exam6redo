@@ -1,10 +1,8 @@
 public abstract class Person {
     private String name;
-    public String person;
 
-    public Person(String name, String person) {
+    public Person(String name) {
         this.name = name;
-        this.person = person;
     }
 
     public String getName() {

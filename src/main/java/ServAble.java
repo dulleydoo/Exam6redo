@@ -1,3 +1,3 @@
 public interface ServAble {
-    String serve(Person person);
+    void serve(Person person);
 }
